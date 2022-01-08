@@ -1,0 +1,804 @@
+/* RESET */
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+    display: block
+
+body
+    line-height: 1
+
+ol, ul
+    list-style: none
+
+blockquote, q
+    quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+    content: ''
+    content: none
+
+table
+    border-collapse: collapse
+    border-spacing: 0
+
+/* RESET */
+
+body
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #F6F6ED
+    font-family: 'Noto Sans TC', sans-serif
+
+#container
+    width: 100%
+    height: 100%
+    @media (min-width:321px)
+        width: 320px
+        //smartphones, portrait iPhone, portrait 480x320 phones (Android)
+    @media (min-width:481px)
+        width: 480px
+        //smartphones, Android phones, landscape iPhone
+    @media (min-width:601px)
+        width: 600px
+        //portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)
+    @media (min-width:801px)
+        width: 800px
+        //tablet, landscape iPad, lo-res laptops ands desktops
+    @media (min-width:1025px)
+        width: 100%
+        //big landscape tablets laptops and desktops
+    @media (min-width:1281px)
+        width: 100%
+        //hi-res laptops and desktops 
+    header
+        width: 100%
+        @media (min-width: 1025px)
+            display: flex
+            justify-content: center
+        nav
+            width: 100%
+            flex-wrap: wrap
+            background-color: #F6F6ED
+            display: flex
+            align-items: center
+            justify-content: center
+            border-bottom: 2px solid #8DBCB4
+            @media (min-width: 1025px)
+                width: 950px
+                border: none
+            .menu-btn
+                width: 15%
+                height: 35px
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                transition: all .5s ease-in-out
+                @media (min-width: 370px)
+                    width: 10%
+                @media (min-width: 520px)
+                    width: 8%
+                @media (min-width: 1025px)
+                    display: none
+                .menu-burger
+                    width: 70%
+                    height: 2px
+                    background-color: #346F7C
+                    border-radius: 5px
+                    box-shadow: 0 2px 5px #346F7C
+                    transition: all .1s ease-in-out
+                .menu-burger::before, .menu-burger::after
+                    content: ''
+                    position: absolute
+                    width: 70%
+                    height: 2px
+                    background-color: #346F7C
+                    border-radius: 5px
+                    box-shadow: 0 2px 5px #346F7C
+                    transition: all .1s ease-in-out
+                .menu-burger::before
+                    transform: translateY(-8px)
+                .menu-burger::after
+                    transform: translateY(8px)
+            .open
+                .menu-burger
+                    transform: translateX(-50px)
+                    background-color: transparent
+                    box-shadow: none
+                .menu-burger::before
+                    transform: rotate(45deg) translate(39px, -39px)
+                .menu-burger::after
+                    transform: rotate(-45deg) translate(39px, 39px)
+            figure
+                width: 75%
+                height: 100%
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                @media (min-width: 370px)
+                    width: 80%
+                @media (min-width: 520px)
+                    width: 82%
+                @media (min-width: 1025px)
+                    justify-content: center
+                    width: 120px
+                img
+                    width: 100px
+                    height: 50px
+            ul
+                width: 100%
+                transition: all .2s linear
+                visibility: hidden
+                background-color: rgba(154, 221, 182, 0.1)
+                @media (min-width: 1025px)
+                    width: 830px
+                    visibility: visible
+                    display: flex
+                    flex-direction: row
+                    background-color: transparent
+                li
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    transition: all .2s linear
+                    height: 0
+                    @media (min-width: 1025px)
+                        width: 25%
+                        height: 50px
+                    a
+                        width: 90%
+                        text-decoration: none
+                        color: #8DBCB4
+                        opacity: 0
+                        transition: all .1s linear
+                        font-size: 13px
+                        font-weight: bold
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        @media (min-width: 1025px)
+                            opacity: 1
+                            color: #346F7C
+                            &:hover
+                                color: rgba(11, 181, 244, 0.4)
+            .show
+                width: 100%
+                transition: all .2s linear
+                visibility: visible
+                li
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    transition: all .2s linear
+                    height: 40px
+                    a
+                        width: 90%
+                        height: 100%
+                        transition: all .4s linear
+                        opacity: 1
+    #section-logo-carrossel
+        width: 100%
+        display: flex
+        justify-content: center
+        .container-logo-carrossel
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            @media (min-width: 1025px)
+                justify-content: space-around
+                margin: 20px 0
+            @media (min-width: 801px)
+                flex-direction: row
+            .img-slider
+                display: none
+                position: relative
+                width: 600px
+                height: 200px
+                margin: 10px
+                @media (min-width: 621px)
+                    display: block
+                @media (min-width:801px)
+                    width: 470px
+                @media (min-width: 1025px)
+                    width: 700px
+                .slide
+                    width: 600px
+                    height: 200px
+                    z-index: 1
+                    position: absolute
+                    width: 100%
+                    clip-path: circle(0% at 0 50%)
+                    img
+                        height: 200px
+                        z-index: 1
+                        width: 100%
+                        border-radius: 5px
+                        overflow: hidden
+                .active
+                    transition: 2s
+                    transition-property: clip-path
+                    clip-path: circle(150.0% at 0 50%)
+                .navegacao-carrossel
+                    z-index: 2
+                    position: absolute
+                    display: flex
+                    bottom: 10px
+                    left: 50%
+                    transform: translateX(-50%)
+                    .navegacao-btn
+                        opacity: 1
+                        background-color: #ffffff
+                        width: 8px
+                        height: 8px
+                        margin: 10px
+                        border-radius: 50%
+                        cursor: pointer
+                    .active
+                        opacity: 1
+                        background-color: #346F7C
+                        box-shadow: 0 2px 5px #346F7C
+            .nome-da-empresa-desk
+                display: none
+                width: 270px
+                @media (min-width:801px)
+                    display: block
+                    padding-top: 31px
+                    text-align: center
+                    display: flex
+                    flex-direction: row
+                    text-align: center
+                    h1
+                        background-color: rgba(154, 221, 182, 0.1)
+                        width: 270px
+                        padding: 20px 0
+                        margin-bottom: 10px
+                        font-weight: 600
+                        font-size: 36px
+                        line-height: 30px
+                        color: #346F7C
+                        box-shadow: 0 2px 5px #9ADDB6
+                        span
+                            font-weight: normal
+                            font-size: 18px
+                            color: #A4A4A4
+                    p
+                        width: 270px
+                        padding-bottom: 31px
+                        font-weight: bold
+                        color: #346F7C
+                        font-size: 15px
+                        line-height: 30px
+            .nome-da-empresa-mobile
+                padding-top: 31px
+                flex-direction: column
+                align-items: center
+                display: block
+                padding-top: 31px
+                text-align: center
+                display: flex
+                flex-direction: column
+                text-align: center
+                @media (min-width:801px)
+                    display: none
+                h1
+                    background-color: #9ADDB6
+                    width: 270px
+                    padding: 20px 0
+                    margin-bottom: 10px
+                    font-weight: 600
+                    font-size: 36px
+                    line-height: 30px
+                    color: #346F7C
+                    box-shadow: 0 2px 5px #9ADDB6
+                    background-color: rgba(154, 221, 182, 0.1)
+                    span
+                        font-weight: normal
+                        font-size: 18px
+                        color: #A4A4A4
+                p
+                    width: 270px
+                    padding-bottom: 31px
+                    font-weight: bold
+                    color: #346F7C
+                    font-size: 15px
+                    line-height: 30px
+    #section-introducao
+        width: 100%
+        height: 1100px
+        background-color: #ffffff
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: rgba(141, 188, 180, 0.2)
+        @media (min-width: 1025px)
+            height: 400px
+        .container-introducao
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            flex-direction: column
+            @media (min-width: 1025px)
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+                width: 950px
+            div:nth-child(1)
+                height: 330px
+                width: 270px
+                background-color: rgba(246, 246, 237, 0.9)
+                border: 2px solid rgba(52, 111, 124, 0.2)
+                box-shadow: 0 2px 5px #9ADDB6
+                border-radius: 4px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .container-conteudo
+                    width: 230px
+                    height: auto
+                    border: none
+                    background: transparent
+                    box-shadow: none
+                    @media (min-width: 1025px)
+                        flex-direction: column
+                    h2
+                        width: 100%
+                        padding: 10px 0 20px
+                        margin-bottom: 20px
+                        text-align: center
+                        font-size: 20px
+                        font-weight: bold
+                        color: #346F7C
+                        border-bottom: 1px solid rgba(52, 111, 124, 0.2)
+                    p
+                        margin-bottom: 20px
+                        font-size: 15px
+                        line-height: 20px
+                        color: #346F7C
+                        text-align: center
+                    button
+                        width: 160px
+                        height: 40px
+                        border: none
+                        border-radius: 4px
+                        background-color: #346F7C
+                        color: rgba(246, 246, 237, 0.9)
+                        font-weight: bold
+            div:nth-child(2)
+                height: 330px
+                width: 270px
+                background-color: rgba(246, 246, 237, 0.9)
+                border: 2px solid rgba(52, 111, 124, 0.2)
+                box-shadow: 0 2px 5px #9ADDB6
+                border-radius: 4px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .container-conteudo
+                    width: 230px
+                    height: auto
+                    border: none
+                    background: transparent
+                    box-shadow: none
+                    @media (min-width: 1025px)
+                        flex-direction: column
+                    h2
+                        width: 100%
+                        padding: 10px 0 20px
+                        margin-bottom: 20px
+                        text-align: center
+                        font-size: 20px
+                        font-weight: bold
+                        color: #346F7C
+                        border-bottom: 1px solid rgba(52, 111, 124, 0.2)
+                    p
+                        margin-bottom: 20px
+                        font-size: 15px
+                        line-height: 20px
+                        color: #346F7C
+                        text-align: center
+                    button
+                        width: 160px
+                        height: 40px
+                        border: none
+                        border-radius: 4px
+                        background-color: #346F7C
+                        color: #F6F6ED
+                        font-weight: bold
+            div:nth-child(3)
+                height: 330px
+                width: 270px
+                background-color: rgba(246, 246, 237, 0.9)
+                border: 2px solid rgba(52, 111, 124, 0.2)
+                box-shadow: 0 2px 5px #9ADDB6
+                border-radius: 4px
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                .container-conteudo
+                    width: 230px
+                    height: auto
+                    border: none
+                    background: transparent
+                    box-shadow: none
+                    @media (min-width: 1025px)
+                        flex-direction: column
+                    h2
+                        width: 100%
+                        padding: 10px 0 20px
+                        margin-bottom: 20px
+                        text-align: center
+                        font-size: 20px
+                        font-weight: bold
+                        color: #346F7C
+                        border-bottom: 1px solid rgba(52, 111, 124, 0.2)
+                    p
+                        margin-bottom: 20px
+                        font-size: 15px
+                        line-height: 20px
+                        color: #346F7C
+                        text-align: center
+                    button
+                        width: 160px
+                        height: 40px
+                        border: none
+                        border-radius: 4px
+                        background-color: #346F7C
+                        color: rgba(246, 246, 237, 0.9)
+                        font-weight: bold
+    #section-nosso-trabalho
+        width: 100%
+        height: 850px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        @media (min-width: 1025px)
+            height: 476px
+        .container-h2
+            display: flex
+            align-items: center
+            @media (min-width: 1025px)
+                width: 950px
+            h2
+                width: 270px
+                color: #346F7C
+                background-color: rgba(246, 246, 237, 0.9)
+                border: 1px solid rgba(154, 221, 182, 0.8)
+                font-size: 24px
+                font-weight: bold
+                padding: 15px 0
+                border-radius: 4px
+                text-align: center
+                box-shadow: 0 5px 10px #9ADDB6
+                @media (min-width: 1025px)
+                    width: 380px
+                    display: block
+                    margin-left: auto
+        .container
+            display: flex
+            flex-direction: column
+            height: 680px
+            justify-content: space-between
+            @media (min-width: 1025px)
+                width: 950px
+                height: 325px
+                flex-direction: row
+                align-items: center
+            div:nth-child(1)
+                height: 320px
+                width: 270px
+                background-color: rgba(154, 221, 182, 0.2)
+                border-bottom: 4px solid rgba(125, 184, 202, 0.3)
+                border-left: 4px solid rgba(125, 184, 202, 0.3)
+                border-radius: 4px
+                @media (min-width: 1025px)
+                    width: 520px
+                    display: flex
+                    justify-content: center
+                    background-color: transparent
+                    border: none
+                img
+                    height: 320px
+                    display: none
+                    @media (min-width: 1024px)
+                        display: block
+                        border-radius: 10px
+            div:nth-child(2)
+                height: 320px
+                width: 270px
+                background-color: rgba(154, 221, 182, 0.2)
+                border-bottom: 4px solid rgba(125, 184, 202, 0.3)
+                border-left: 4px solid rgba(125, 184, 202, 0.3)
+                border-radius: 4px
+                display: flex
+                align-items: center
+                justify-content: center
+                @media (min-width: 1025px)
+                    width: 380px
+                    display: flex
+                    justify-content: center
+                p
+                    width: 320px
+                    font-size: 15px
+                    line-height: 20px
+                    color: #346F7C
+                    text-align: center
+                    @media (max-width: 1025px)
+                        display: block
+                        width: 240px
+    #section-quem-somos
+        width: 100%
+        height: 530px
+        background-color: rgba(154, 221, 182, 0.4)
+        padding-top: 20px
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media (min-width: 1025px)
+            height: 300px
+            justify-content: space-evenly
+            padding-top: 0
+        .div-titulo-quem-somos
+            text-align: center
+            @media (min-width: 1025px)
+                width: 950px
+            h2
+                width: 270px
+                color: #346F7C
+                background-color: rgba(246, 246, 237, 0.9)
+                border: 1px solid rgba(154, 221, 182, 0.8)
+                box-shadow: 0 5px 10px #346F7C
+                font-size: 24px
+                font-weight: bold
+                padding: 15px 0
+                margin: 20px 0
+                border-radius: 4px
+                text-align: center
+                @media (min-width: 1025px)
+                    width: 320px
+                    margin: 0
+        .container-imagem-texto
+            @media (min-width: 1025px)
+                width: 950px
+                display: flex
+                flex-direction: row
+            .div-icone-quem-somos
+                width: 100%
+                display: flex
+                justify-content: center
+                @media (min-width: 1025px)
+                    width: 320px
+                img
+                    height: 100px
+                    width: 100px
+                    padding: 10px 10px
+                    border-radius: 4px
+            .div-descricao-empresa
+                width: 270px
+                @media (min-width: 1025px)
+                    width: 620px
+                p
+                    font-size: 15px
+                    line-height: 20px
+                    color: #346F7C
+                    text-align: justify
+    #section-orcamento
+        width: 100%
+        height: 420px
+        display: flex
+        flex-direction: column
+        align-items: center
+        @media (min-width: 1025px)
+            height: 360px
+        .div-titulo
+            width: 270px
+            @media (min-width: 1025px)
+                width: 950px
+            .div-container-h2
+                width: 270px
+                background-color: rgba(11, 181, 244, 0.4)
+                box-shadow: 0 10px 20px rgba(11, 181, 244, 0.4)
+                border-radius: 4px
+                padding: 15px 15px
+                margin: 30px 0
+                @media (min-width: 1025px)
+                    width: 950px
+                h2
+                    color: #346F7C
+                    font-size: 15px
+                    line-height: 20px
+                    font-weight: bold
+                    text-align: center
+        .div-logo-formas-de-pagamento
+            width: 270px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            img
+                width: 40px
+                height: 40px
+        .div-descritivo
+            width: 270px
+            padding: 30px 0
+            p
+                font-size: 15px
+                line-height: 20px
+                color: #346F7C
+                text-align: center
+        .div-botao-orcamento
+            width: 270px
+            display: flex
+            justify-content: center
+            button
+                width: 160px
+                height: 40px
+                border: none
+                border-radius: 4px
+                background-color: #346F7C
+                color: #F6F6ED
+                font-weight: bold
+    footer
+        width: 100%
+        background-color: rgba(141, 188, 180, 0.2)
+        border-bottom: 2px solid #F6F6ED
+        display: flex
+        justify-content: center
+        .container-footer
+            @media (min-width: 1025px)
+                display: flex
+                flex-direction: row
+                width: 950px
+            .div-endereco
+                width: 100%
+                height: 210px
+                display: flex
+                justify-content: center
+                align-items: center
+                @media (min-width: 1025px)
+                    border-right: 1px solid #F6F6ED
+                .container
+                    height: 210px
+                    width: 270px
+                    border-bottom: 1px solid #F6F6ED
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    @media (min-width: 1025px)
+                        border: none
+                        height: 160px
+                        display: block
+                    h2
+                        color: #346f7c
+                        border-bottom: 1px solid #F6F6ED
+                        font-size: 24px
+                        font-weight: bold
+                        padding: 15px 0
+                        margin-bottom: 20px
+                        text-align: center
+                    .p-rua-bairro-numero
+                        padding-bottom: 20px
+                        font-size: 13px
+                        line-height: 18px
+                        text-align: center
+                        font-weight: bold
+                        color: #346F7C
+                    .p-cidade-estado
+                        font-size: 20px
+                        line-height: 25px
+                        text-align: center
+                        font-weight: bold
+                        color: #346F7C
+            .div-contato
+                width: 100%
+                height: 210px
+                display: flex
+                align-items: center
+                justify-content: center
+                @media (min-width: 1025px)
+                    border-right: 1px solid #F6F6ED
+                .container
+                    height: 210px
+                    width: 270px
+                    border-bottom: 1px solid #F6F6ED
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    @media (min-width: 1025px)
+                        border: none
+                        height: 160px
+                        display: block
+                    h2
+                        color: #346f7c
+                        border-bottom: 1px solid #F6F6ED
+                        font-size: 24px
+                        font-weight: bold
+                        padding: 15px 0
+                        margin-bottom: 20px
+                        text-align: center
+                    .p-telefone
+                        padding-bottom: 20px
+                        font-size: 13px
+                        line-height: 18px
+                        text-align: center
+                        font-weight: bold
+                        color: #346F7C
+                    .p-email
+                        font-size: 13px
+                        line-height: 18px
+                        text-align: center
+                        font-weight: bold
+                        color: #346F7C
+            .div-redes-sociais
+                width: 100%
+                height: 190px
+                display: flex
+                justify-content: center
+                align-items: center
+                @media (min-width: 1025px)
+                    height: 210px
+                .container
+                    width: 270px
+                    display: flex
+                    flex-direction: column
+                    @media (min-width: 1025px)
+                        height: 160px
+                        display: block
+                    h2
+                        color: #346f7c
+                        border-bottom: 1px solid #F6F6ED
+                        font-size: 24px
+                        font-weight: bold
+                        padding: 15px 0
+                        margin-bottom: 20px
+                        text-align: center
+                    .container-imagens-redes-sociais
+                        display: flex
+                        flex-direction: row
+                        justify-content: space-evenly
+                        img
+                            width: 40px
+                            height: 40px
+    #section-desenvolvedor
+        width: 100%
+        height: 50px
+        background-color: #000000
+        display: flex
+        align-items: center
+        justify-content: center
+        h2
+            font-size: 13px
+            color: #F6F6ED
+            font-weight: bold
