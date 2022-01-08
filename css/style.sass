@@ -1,3 +1,9 @@
+/** Fontes/
+ 
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Play&display=swap')
+
+/** Fontes/
+
 /* RESET */
 
 *
@@ -52,9 +58,8 @@ body
     display: flex
     align-items: center
     justify-content: center
-    background-color: #F6F6ED
-    font-family: 'Noto Sans TC', sans-serif
-
+    background-color: #f6f6ed
+    font-family: 'Asap Condensed', sans-serif
 #container
     width: 100%
     height: 100%
@@ -78,20 +83,21 @@ body
         //hi-res laptops and desktops 
     header
         width: 100%
+        background-color: #FCFAF0
         @media (min-width: 1025px)
             display: flex
             justify-content: center
         nav
             width: 100%
             flex-wrap: wrap
-            background-color: #F6F6ED
             display: flex
             align-items: center
-            justify-content: center
-            border-bottom: 2px solid #8DBCB4
+            justify-content: flex-end
+            text-transform: uppercase
             @media (min-width: 1025px)
                 width: 950px
                 border: none
+                justify-content: flex-start
             .menu-btn
                 width: 15%
                 height: 35px
@@ -110,18 +116,18 @@ body
                 .menu-burger
                     width: 70%
                     height: 2px
-                    background-color: #346F7C
+                    background-color: #2e2e30
                     border-radius: 5px
-                    box-shadow: 0 2px 5px #346F7C
+                    box-shadow: 0 2px 5px #2e2e30
                     transition: all .1s ease-in-out
                 .menu-burger::before, .menu-burger::after
                     content: ''
                     position: absolute
                     width: 70%
                     height: 2px
-                    background-color: #346F7C
+                    background-color: #2e2e30
                     border-radius: 5px
-                    box-shadow: 0 2px 5px #346F7C
+                    box-shadow: 0 2px 5px #2e2e30
                     transition: all .1s ease-in-out
                 .menu-burger::before
                     transform: translateY(-8px)
@@ -136,29 +142,13 @@ body
                     transform: rotate(45deg) translate(39px, -39px)
                 .menu-burger::after
                     transform: rotate(-45deg) translate(39px, 39px)
-            figure
-                width: 75%
-                height: 100%
-                display: flex
-                align-items: center
-                justify-content: flex-end
-                @media (min-width: 370px)
-                    width: 80%
-                @media (min-width: 520px)
-                    width: 82%
-                @media (min-width: 1025px)
-                    justify-content: center
-                    width: 120px
-                img
-                    width: 100px
-                    height: 50px
             ul
                 width: 100%
                 transition: all .2s linear
                 visibility: hidden
                 background-color: rgba(154, 221, 182, 0.1)
                 @media (min-width: 1025px)
-                    width: 830px
+                    width: 40%
                     visibility: visible
                     display: flex
                     flex-direction: row
@@ -167,7 +157,7 @@ body
                     width: 100%
                     display: flex
                     justify-content: center
-                    transition: all .2s linear
+                    transition: all .1s linear
                     height: 0
                     @media (min-width: 1025px)
                         width: 25%
@@ -175,17 +165,17 @@ body
                     a
                         width: 90%
                         text-decoration: none
-                        color: #8DBCB4
+                        color: #2A2E30
                         opacity: 0
                         transition: all .1s linear
-                        font-size: 13px
-                        font-weight: bold
+                        font-size: 15px
+                        font-weight: normal
                         display: flex
                         align-items: center
                         justify-content: center
                         @media (min-width: 1025px)
                             opacity: 1
-                            color: #346F7C
+                            color: #2A2E30
                             &:hover
                                 color: rgba(11, 181, 244, 0.4)
             .show
@@ -196,14 +186,61 @@ body
                     width: 100%
                     display: flex
                     justify-content: center
-                    transition: all .2s linear
+                    transition: all .1s linear
                     height: 40px
                     a
                         width: 90%
                         height: 100%
                         transition: all .4s linear
                         opacity: 1
+    #section-abertura
+        width: 100%
+        height: 500px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-image: url('../img/background-introduction.jpg')
+        background-position: top
+        background-attachment: fixed
+        background-size: cover
+        background-repeat: no-repeat
+        #container-background
+            padding: 40px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            background-color: rgba(0, 0, 0, .7)
+            .nome-da-empresa-desk
+                display: flex
+                flex-direction: column
+                @media (min-width:801px)
+                    display: block
+                    text-align: center
+                    text-align: center
+                    div
+                        background-color: #FCFAF0
+                        width: 350px
+                        padding: 20px 0
+                        margin-bottom: 30px
+                        font-weight: 600
+                        font-size: 36px
+                        line-height: 30px
+                        color: #346F7C
+                        box-shadow: 0 2px 5px #FCFAF0
+                        img
+                            height: 42px
+            h1, p
+                color: #0fafba
+                text-align: center
+            h1
+                font-size: 24px
+            p
+                font-size: 16px
+                margin-top: 10px
     #section-logo-carrossel
+        display: none
         width: 100%
         display: flex
         justify-content: center

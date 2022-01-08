@@ -1,3 +1,6 @@
+/** Fontes/ */
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Play&display=swap");
+/** Fontes/ */
 /* RESET */
 * {
   margin: 0;
@@ -65,8 +68,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F6F6ED;
-  font-family: 'Noto Sans TC', sans-serif;
+  background-color: #f6f6ed;
+  font-family: 'Asap Condensed', sans-serif;
 }
 
 #container {
@@ -112,6 +115,7 @@ body {
 
 #container header {
   width: 100%;
+  background-color: #FCFAF0;
 }
 
 @media (min-width: 1025px) {
@@ -129,23 +133,25 @@ body {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #F6F6ED;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: 2px solid #8DBCB4;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1025px) {
   #container header nav {
     width: 950px;
     border: none;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -188,10 +194,10 @@ body {
 #container header nav .menu-btn .menu-burger {
   width: 70%;
   height: 2px;
-  background-color: #346F7C;
+  background-color: #2e2e30;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px #346F7C;
-          box-shadow: 0 2px 5px #346F7C;
+  -webkit-box-shadow: 0 2px 5px #2e2e30;
+          box-shadow: 0 2px 5px #2e2e30;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
 }
@@ -201,10 +207,10 @@ body {
   position: absolute;
   width: 70%;
   height: 2px;
-  background-color: #346F7C;
+  background-color: #2e2e30;
   border-radius: 5px;
-  -webkit-box-shadow: 0 2px 5px #346F7C;
-          box-shadow: 0 2px 5px #346F7C;
+  -webkit-box-shadow: 0 2px 5px #2e2e30;
+          box-shadow: 0 2px 5px #2e2e30;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
 }
@@ -237,46 +243,6 @@ body {
           transform: rotate(-45deg) translate(39px, 39px);
 }
 
-#container header nav figure {
-  width: 75%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-@media (min-width: 370px) {
-  #container header nav figure {
-    width: 80%;
-  }
-}
-
-@media (min-width: 520px) {
-  #container header nav figure {
-    width: 82%;
-  }
-}
-
-@media (min-width: 1025px) {
-  #container header nav figure {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 120px;
-  }
-}
-
-#container header nav figure img {
-  width: 100px;
-  height: 50px;
-}
-
 #container header nav ul {
   width: 100%;
   -webkit-transition: all .2s linear;
@@ -287,7 +253,7 @@ body {
 
 @media (min-width: 1025px) {
   #container header nav ul {
-    width: 830px;
+    width: 40%;
     visibility: visible;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -308,8 +274,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
   height: 0;
 }
 
@@ -323,12 +289,12 @@ body {
 #container header nav ul li a {
   width: 90%;
   text-decoration: none;
-  color: #8DBCB4;
+  color: #2A2E30;
   opacity: 0;
   -webkit-transition: all .1s linear;
   transition: all .1s linear;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +309,7 @@ body {
 @media (min-width: 1025px) {
   #container header nav ul li a {
     opacity: 1;
-    color: #346F7C;
+    color: #2A2E30;
   }
   #container header nav ul li a:hover {
     color: rgba(11, 181, 244, 0.4);
@@ -365,8 +331,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
   height: 40px;
 }
 
@@ -378,7 +344,96 @@ body {
   opacity: 1;
 }
 
+#container #section-abertura {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../img/background-introduction.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container #section-abertura #container-background {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#container #section-abertura #container-background .nome-da-empresa-desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 801px) {
+  #container #section-abertura #container-background .nome-da-empresa-desk {
+    display: block;
+    text-align: center;
+    text-align: center;
+  }
+  #container #section-abertura #container-background .nome-da-empresa-desk div {
+    background-color: #FCFAF0;
+    width: 350px;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 30px;
+    color: #346F7C;
+    -webkit-box-shadow: 0 2px 5px #FCFAF0;
+            box-shadow: 0 2px 5px #FCFAF0;
+  }
+  #container #section-abertura #container-background .nome-da-empresa-desk div img {
+    height: 42px;
+  }
+}
+
+#container #section-abertura #container-background h1, #container #section-abertura #container-background p {
+  color: #0fafba;
+  text-align: center;
+}
+
+#container #section-abertura #container-background h1 {
+  font-size: 24px;
+}
+
+#container #section-abertura #container-background p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 #container #section-logo-carrossel {
+  display: none;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
