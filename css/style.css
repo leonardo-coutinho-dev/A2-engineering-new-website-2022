@@ -771,6 +771,7 @@ body {
 }
 
 #container #section-introducao .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background {
+  border: none;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -855,6 +856,7 @@ body {
 }
 
 #container #section-introducao .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background {
+  border: none;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -939,6 +941,7 @@ body {
 }
 
 #container #section-introducao .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background {
+  border: none;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
   display: -ms-flexbox;
