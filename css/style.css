@@ -681,13 +681,51 @@ body {
 
 @media (min-width: 1025px) {
   #container #section-introducao {
-    height: 500px;
+    height: 600px;
   }
 }
 
-#container #section-introducao .container-introducao {
-  width: 100%;
+#container #section-introducao .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
+  width: 930px;
+}
+
+#container #section-introducao .container h2 {
+  background-color: #bbcbcb;
+  color: #FCFAF0;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 2px 10px;
+}
+
+#container #section-introducao .container h3 {
+  width: 100%;
+  color: #325466;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+#container #section-introducao .container h3 span {
+  color: #0fafba;
+}
+
+#container #section-introducao .container .container-introducao {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,7 +742,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-  #container #section-introducao .container-introducao {
+  #container #section-introducao .container .container-introducao {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -715,11 +753,11 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 950px;
+    width: 930px;
   }
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) {
+#container #section-introducao .container .container-introducao div:nth-child(1) {
   height: 380px;
   width: 270px;
   background-color: #EFEFE6;
@@ -741,7 +779,7 @@ body {
           justify-content: flex-start;
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) .container-conteudo {
+#container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo {
   width: 230px;
   margin-top: 20px;
   height: auto;
@@ -752,7 +790,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-  #container #section-introducao .container-introducao div:nth-child(1) .container-conteudo {
+  #container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -760,7 +798,7 @@ body {
   }
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) .container-conteudo .container-background {
+#container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo .container-background {
   background: url("../img/container-1-2.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -770,7 +808,7 @@ body {
   width: 100%;
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background {
+#container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background {
   border: none;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
@@ -786,17 +824,17 @@ body {
   width: 100%;
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background img {
+#container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background img {
   height: 40px;
   width: 40px;
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background p {
+#container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo .container-background .div-background p {
   color: #ffffff;
   margin-top: 10px;
 }
 
-#container #section-introducao .container-introducao div:nth-child(1) .container-conteudo p {
+#container #section-introducao .container .container-introducao div:nth-child(1) .container-conteudo p {
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
@@ -804,7 +842,7 @@ body {
   text-align: center;
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) {
+#container #section-introducao .container .container-introducao div:nth-child(2) {
   height: 380px;
   width: 270px;
   background-color: #EFEFE6;
@@ -826,7 +864,7 @@ body {
           justify-content: flex-start;
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) .container-conteudo {
+#container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo {
   width: 230px;
   margin-top: 20px;
   height: auto;
@@ -837,7 +875,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-  #container #section-introducao .container-introducao div:nth-child(2) .container-conteudo {
+  #container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -845,7 +883,7 @@ body {
   }
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) .container-conteudo .container-background {
+#container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo .container-background {
   background: url("../img/container-2-2.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -855,7 +893,7 @@ body {
   width: 100%;
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background {
+#container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background {
   border: none;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
@@ -871,17 +909,17 @@ body {
   width: 100%;
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background img {
+#container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background img {
   height: 40px;
   width: 40px;
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background p {
+#container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo .container-background .div-background p {
   color: #ffffff;
   margin-top: 10px;
 }
 
-#container #section-introducao .container-introducao div:nth-child(2) .container-conteudo p {
+#container #section-introducao .container .container-introducao div:nth-child(2) .container-conteudo p {
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
@@ -889,7 +927,7 @@ body {
   text-align: center;
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) {
+#container #section-introducao .container .container-introducao div:nth-child(3) {
   height: 380px;
   width: 270px;
   background-color: #EFEFE6;
@@ -911,7 +949,7 @@ body {
           justify-content: flex-start;
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) .container-conteudo {
+#container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo {
   width: 230px;
   margin-top: 20px;
   height: auto;
@@ -922,7 +960,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-  #container #section-introducao .container-introducao div:nth-child(3) .container-conteudo {
+  #container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -930,7 +968,7 @@ body {
   }
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) .container-conteudo .container-background {
+#container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo .container-background {
   background: url("../img/container-3-2.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -940,7 +978,7 @@ body {
   width: 100%;
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background {
+#container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background {
   border: none;
   background-color: rgba(0, 0, 0, 0.4);
   display: -webkit-box;
@@ -956,17 +994,17 @@ body {
   width: 100%;
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background img {
+#container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background img {
   height: 40px;
   width: 40px;
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background p {
+#container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo .container-background .div-background p {
   color: #ffffff;
   margin-top: 10px;
 }
 
-#container #section-introducao .container-introducao div:nth-child(3) .container-conteudo p {
+#container #section-introducao .container .container-introducao div:nth-child(3) .container-conteudo p {
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 20px;
@@ -1146,7 +1184,7 @@ body {
 #container #section-quem-somos {
   width: 100%;
   height: 530px;
-  background-color: rgba(154, 221, 182, 0.4);
+  background-color: #efefe6;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,15 +1201,22 @@ body {
 @media (min-width: 1025px) {
   #container #section-quem-somos {
     height: 300px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 0;
   }
 }
 
 #container #section-quem-somos .div-titulo-quem-somos {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 1025px) {
@@ -1181,25 +1226,27 @@ body {
 }
 
 #container #section-quem-somos .div-titulo-quem-somos h2 {
-  width: 270px;
-  color: #346F7C;
-  background-color: rgba(246, 246, 237, 0.9);
-  border: 1px solid rgba(154, 221, 182, 0.8);
-  -webkit-box-shadow: 0 5px 10px #346F7C;
-          box-shadow: 0 5px 10px #346F7C;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 15px 0;
-  margin: 20px 0;
-  border-radius: 4px;
-  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #0fafba;
+  color: #efefe6;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding: 2px 10px;
+  text-align: left;
 }
 
-@media (min-width: 1025px) {
-  #container #section-quem-somos .div-titulo-quem-somos h2 {
-    width: 320px;
-    margin: 0;
-  }
+#container #section-quem-somos .div-titulo-quem-somos h3 {
+  color: #325466;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: left;
+}
+
+#container #section-quem-somos .div-titulo-quem-somos h3 span {
+  color: #0fafba;
 }
 
 @media (min-width: 1025px) {
@@ -1227,24 +1274,30 @@ body {
 
 @media (min-width: 1025px) {
   #container #section-quem-somos .container-imagem-texto .div-icone-quem-somos {
-    width: 320px;
+    width: 70px;
   }
 }
 
 #container #section-quem-somos .container-imagem-texto .div-icone-quem-somos img {
-  height: 100px;
-  width: 100px;
-  padding: 10px 10px;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
   border-radius: 4px;
 }
 
 #container #section-quem-somos .container-imagem-texto .div-descricao-empresa {
   width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 1025px) {
   #container #section-quem-somos .container-imagem-texto .div-descricao-empresa {
-    width: 620px;
+    width: 880px;
   }
 }
 
