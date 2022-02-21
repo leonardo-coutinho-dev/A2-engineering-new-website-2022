@@ -240,14 +240,12 @@ body
     #section-quem-somos
         width: 100%
         background-color: #efefe6
-        padding: 20px 0
+        padding: 40px 0
         display: flex
         flex-direction: column
         align-items: center
         @media (min-width: 930px)
-            height: 300px
             justify-content: center
-            padding-top: 0
         .div-titulo-quem-somos
             width: 270px
             display: flex
@@ -306,20 +304,20 @@ body
                     text-align: justify
     #section-nosso-trabalho
         width: 100%
-        height: 850px
+        padding: 40px 0
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: center
-        @media (min-width: 930px)
-            height: 400px
         .container-h2
+            width: 270px
             display: flex
             align-items: center
             justify-content: flex-end
             margin-bottom: 10px
+            @media (min-width: 600px)
+                width: 550px
             @media (min-width: 930px)
-                width: 950px
+                width: 880px
             h2
                 width: max-content
                 background-color: #efefe6
@@ -329,75 +327,70 @@ body
                 padding: 2px 10px
                 text-align: left
         .container
+            width: 270px
             display: flex
             flex-direction: column
-            height: 680px
             justify-content: space-between
+            @media (min-width: 600px)
+                width: 550px
             @media (min-width: 930px)
-                width: 950px
-                height: 250px
+                width: 880px
                 flex-direction: row
                 align-items: center
             div:nth-child(1)
-                height: 250px
                 width: 270px
-                background-color: rgba(154, 221, 182, 0.2)
-                border-bottom: 4px solid rgba(125, 184, 202, 0.3)
-                border-left: 4px solid rgba(125, 184, 202, 0.3)
+                height: 150px
+                margin-bottom: 10px
                 border-radius: 4px
+                @media (min-width: 600px)
+                    width: 550px
                 @media (min-width: 930px)
                     width: 200px
-                    display: flex
-                    justify-content: center
-                    background-color: transparent
-                    border: none
-                img
-                    height: 250px
-                    display: block
-                    border-radius: 10px
+                    height: 195px
+                    margin-bottom: 0
+            .div-background
+                background-image: url("../img/container-1.jpg")
+                background-position: center
+                background-size: cover
+                background-repeat: no-repeat
             div:nth-child(2)
-                height: 250px
                 width: 270px
                 background-color: #efefe6
                 border-radius: 4px
-                display: flex
-                flex-direction: column
-                align-items: center
-                justify-content: center
+                @media (min-width: 600px)
+                    width: 550px
                 @media (min-width: 930px)
-                    width: 725px
-                    align-items: center
-                    justify-content: center
-                h3
                     width: 660px
+                h3
+                    margin: 20px 20px 0
                     color: #325466
                     font-size: 28px
                     line-height: 35px
                     text-align: left
                 p
-                    width: 660px
-                    margin-top: 20px
+                    margin: 20px
+                    color: #346F7C
                     font-size: 15px
                     line-height: 20px
-                    color: #346F7C
-                    text-align: left
-    #section-introducao
+                    text-align: justify
+    #section-nossos-servicos
         width: 100%
-        height: 1200px
+        padding: 40px 0
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
         background-color: #FCFAF0
-        @media (min-width: 930px)
-            height: 600px
         .container
+            width: 270px
             display: flex
             flex-direction: column
             align-items: flex-start
             justify-content: center
-            height: 100%
-            width: 930px
+            @media (min-width: 600px)
+                width: 550px
+            @media (min-width: 930px)
+                width: 880px
             h2
                 background-color: #325466
                 color: #FCFAF0
@@ -410,166 +403,82 @@ body
                 color: #325466
                 font-size: 30px
                 line-height: 35px
-                margin-bottom: 20px
                 span
                     color: #0fafba
-            .container-introducao
+            .container-nossos-servicos
                 width: 100%
                 display: flex
                 justify-content: space-evenly
                 align-items: center
                 flex-direction: column
                 @media (min-width: 930px)
+                    width: 880px
                     flex-direction: row
                     align-items: center
                     justify-content: space-between
-                    width: 930px
+                .div-card
+                    height: 380px
+                    width: 270px
+                    margin-top: 20px
+                    background-color: #EFEFE6
+                    box-shadow: 0 5px 5px #bcbbbc
+                    border: 2px solid #bcbbbc
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: flex-start
+                    .container-conteudo
+                        width: 230px
+                        margin-top: 20px
+                        height: auto
+                        border: none
+                        background: transparent
+                        box-shadow: none
+                        @media (min-width: 930px)
+                            flex-direction: column
+                        .container-background
+                            background-position: bottom
+                            background-repeat: no-repeat
+                            background-size: cover
+                            height: 130px
+                            margin-bottom: 20px
+                            width: 100%
+                            .div-background
+                                border: none
+                                background-color: rgba(0, 0, 0, 0.4)
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                height: 100%
+                                width: 100%
+                                img
+                                    height: 30px
+                                    width: 30px
+                                p
+                                    color: #ffffff
+                                    margin-top: 10px
+                        p
+                            margin-bottom: 20px
+                            font-size: 15px
+                            line-height: 20px
+                            color: #0A0708
+                            text-align: center
                 div:nth-child(1)
-                    height: 380px
-                    width: 270px
-                    background-color: #EFEFE6
-                    box-shadow: 0 5px 5px #bcbbbc
-                    border: 2px solid #bcbbbc
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    justify-content: flex-start
-                    .container-conteudo
-                        width: 230px
-                        margin-top: 20px
-                        height: auto
-                        border: none
-                        background: transparent
-                        box-shadow: none
-                        @media (min-width: 930px)
-                            flex-direction: column
-                        .container-background
-                            background: url('../img/container-1-2.jpg')
-                            background-position: bottom
-                            background-repeat: no-repeat
-                            background-size: cover
-                            height: 130px
-                            margin-bottom: 20px
-                            width: 100%
-                            .div-background
-                                border: none
-                                background-color: rgba(0, 0, 0, 0.4)
-                                display: flex
-                                align-items: center
-                                justify-content: center
-                                height: 100%
-                                width: 100%
-                                img
-                                    height: 30px
-                                    width: 30px
-                                p
-                                    color: #ffffff
-                                    margin-top: 10px
-                        p
-                            margin-bottom: 20px
-                            font-size: 15px
-                            line-height: 20px
-                            color: #0A0708
-                            text-align: center
+                    .container-background
+                        background: url('../img/container-1-2.jpg')
                 div:nth-child(2)
-                    height: 380px
-                    width: 270px
-                    background-color: #EFEFE6
-                    box-shadow: 0 5px 5px #bcbbbc
-                    border: 2px solid #bcbbbc
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    justify-content: flex-start
-                    .container-conteudo
-                        width: 230px
-                        margin-top: 20px
-                        height: auto
-                        border: none
-                        background: transparent
-                        box-shadow: none
-                        @media (min-width: 930px)
-                            flex-direction: column
-                        .container-background
-                            background: url('../img/container-2-2.jpg')
-                            background-position: bottom
-                            background-repeat: no-repeat
-                            background-size: cover
-                            height: 130px
-                            margin-bottom: 20px
-                            width: 100%
-                            .div-background
-                                border: none
-                                background-color: rgba(0, 0, 0, 0.4)
-                                display: flex
-                                align-items: center
-                                justify-content: center
-                                height: 100%
-                                width: 100%
-                                img
-                                    height: 30px
-                                    width: 30px
-                                p
-                                    color: #ffffff
-                                    margin-top: 10px
-                        p
-                            margin-bottom: 20px
-                            font-size: 15px
-                            line-height: 20px
-                            color: #0A0708
-                            text-align: center
+                    .container-background
+                        background: url('../img/container-2-2.jpg')
                 div:nth-child(3)
-                    height: 380px
-                    width: 270px
-                    background-color: #EFEFE6
-                    box-shadow: 0 5px 5px #bcbbbc
-                    border: 2px solid #bcbbbc
-                    display: flex
-                    flex-direction: column
-                    align-items: center
-                    justify-content: flex-start
-                    .container-conteudo
-                        width: 230px
-                        margin-top: 20px
-                        height: auto
-                        border: none
-                        background: transparent
-                        box-shadow: none
-                        @media (min-width: 930px)
-                            flex-direction: column
-                        .container-background
-                            background: url('../img/container-3-2.jpg')
-                            background-position: bottom
-                            background-repeat: no-repeat
-                            background-size: cover
-                            height: 130px
-                            margin-bottom: 20px
-                            width: 100%
-                            .div-background
-                                border: none
-                                background-color: rgba(0, 0, 0, 0.4)
-                                display: flex
-                                align-items: center
-                                justify-content: center
-                                height: 100%
-                                width: 100%
-                                img
-                                    height: 30px
-                                    width: 30px
-                                p
-                                    color: #ffffff
-                                    margin-top: 10px
-                        p
-                            margin-bottom: 20px
-                            font-size: 15px
-                            line-height: 20px
-                            color: #0A0708
-                            text-align: center
+                    .container-background
+                        background: url('../img/container-3-2.jpg')
     #section-logo-carrossel
         display: none
         width: 100%
         display: flex
         justify-content: center
+        @media (min-width: 930px)
+            display: block
         .container-logo-carrossel
             display: flex
             flex-direction: column
@@ -585,11 +494,8 @@ body
                 width: 600px
                 height: 450px
                 margin: 10px
-                @media (min-width: 621px)
-                    display: block
-                @media (min-width:801px)
-                    width: 470px
                 @media (min-width: 930px)
+                    display: block
                     width: 700px
                 .slide
                     width: 600px
@@ -627,71 +533,6 @@ body
                         opacity: 1
                         background-color: #346F7C
                         box-shadow: 0 2px 5px #346F7C
-            .nome-da-empresa-desk
-                display: none
-                width: 270px
-                @media (min-width:801px)
-                    display: block
-                    padding-top: 31px
-                    text-align: center
-                    display: flex
-                    flex-direction: row
-                    text-align: center
-                    h1
-                        background-color: rgba(154, 221, 182, 0.1)
-                        width: 270px
-                        padding: 20px 0
-                        margin-bottom: 10px
-                        font-weight: 600
-                        font-size: 36px
-                        line-height: 30px
-                        color: #346F7C
-                        box-shadow: 0 2px 5px #9ADDB6
-                        span
-                            font-weight: normal
-                            font-size: 18px
-                            color: #A4A4A4
-                    p
-                        width: 270px
-                        padding-bottom: 31px
-                        font-weight: bold
-                        color: #346F7C
-                        font-size: 15px
-                        line-height: 30px
-            .nome-da-empresa-mobile
-                padding-top: 31px
-                flex-direction: column
-                align-items: center
-                display: block
-                padding-top: 31px
-                text-align: center
-                display: flex
-                flex-direction: column
-                text-align: center
-                @media (min-width:801px)
-                    display: none
-                h1
-                    background-color: #9ADDB6
-                    width: 270px
-                    padding: 20px 0
-                    margin-bottom: 10px
-                    font-weight: 600
-                    font-size: 36px
-                    line-height: 30px
-                    color: #346F7C
-                    box-shadow: 0 2px 5px #9ADDB6
-                    background-color: rgba(154, 221, 182, 0.1)
-                    span
-                        font-weight: normal
-                        font-size: 18px
-                        color: #A4A4A4
-                p
-                    width: 270px
-                    padding-bottom: 31px
-                    font-weight: bold
-                    color: #346F7C
-                    font-size: 15px
-                    line-height: 30px
     footer
         width: 100%
         background-color: #efefe6
