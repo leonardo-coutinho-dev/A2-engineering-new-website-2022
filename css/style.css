@@ -392,10 +392,13 @@ body {
   line-height: 20px;
   color: #303032;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
 }
 
 #container #section-abertura #container-background .nome-da-empresa-desk div h1 span {
+  display: block;
+  margin-bottom: 4px;
   color: #0fafba;
 }
 
@@ -848,6 +851,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1006,6 +1013,46 @@ body {
   background-color: #346F7C;
   -webkit-box-shadow: 0 2px 5px #346F7C;
           box-shadow: 0 2px 5px #346F7C;
+}
+
+#container #sections-termos-e-condicoes {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #efefe6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container #sections-termos-e-condicoes .container {
+  width: 270px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #container #sections-termos-e-condicoes .container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 930px) {
+  #container #sections-termos-e-condicoes .container {
+    width: 880px;
+  }
+}
+
+@media (min-width: 1240px) {
+  #container #sections-termos-e-condicoes .container {
+    width: 1440px;
+  }
+}
+
+#container #sections-termos-e-condicoes a {
+  color: #2e2e30;
+  text-decoration: none;
 }
 
 #container footer {

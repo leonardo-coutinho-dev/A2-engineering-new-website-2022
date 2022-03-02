@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Play&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* RESET */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6ed;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+body #container {
+  width: 100%;
+  padding: 20px 0;
+  font-family: 'Asap Condensed', sans-serif;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #container .content-container {
+  width: 270px;
+}
+
+@media (min-width: 600px) {
+  body #container .content-container {
+    width: 550px;
+  }
+}
+
+@media (min-width: 930px) {
+  body #container .content-container {
+    width: 880px;
+  }
+}
+
+@media (min-width: 1240px) {
+  body #container .content-container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body #container .content-container {
+    width: 90%;
+  }
+}
+
+body #container .content-container #ancora-logo-home img {
+  height: 42px;
+}
+
+body #container .content-container h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+body #container .content-container h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+body #container .content-container p {
+  padding-bottom: 20px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+body #container .content-container p strong {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+body #container .content-container a {
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000;
+}
+
+body #container .content-container a:hover {
+  color: rgba(11, 181, 244, 0.4);
+}
+/*# sourceMappingURL=styles.css.map */
