@@ -849,7 +849,7 @@ body {
 }
 
 #container #section-nossos-servicos .container .container-nossos-servicos .div-card {
-  height: 380px;
+  height: 400px;
   width: 270px;
   margin-top: 20px;
   background-color: #EFEFE6;
@@ -935,6 +935,10 @@ body {
   line-height: 20px;
   color: #0A0708;
   text-align: center;
+}
+
+#container #section-nossos-servicos .container .container-nossos-servicos .div-card .container-conteudo p span {
+  color: #0fafba;
 }
 
 #container #section-nossos-servicos .container .container-nossos-servicos div:nth-child(1) .container-background {
