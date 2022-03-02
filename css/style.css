@@ -474,6 +474,10 @@ body {
   color: #0fafba;
 }
 
+#container #section-quem-somos .container-imagem-texto {
+  margin-top: 20px;
+}
+
 @media (min-width: 600px) {
   #container #section-quem-somos .container-imagem-texto {
     width: 550px;
@@ -543,6 +547,56 @@ body {
   line-height: 20px;
   color: #346F7C;
   text-align: justify;
+}
+
+#container #section-quem-somos .div-texto-descritivo {
+  width: 270px;
+}
+
+@media (min-width: 600px) {
+  #container #section-quem-somos .div-texto-descritivo {
+    width: 550px;
+  }
+}
+
+@media (min-width: 930px) {
+  #container #section-quem-somos .div-texto-descritivo {
+    width: 880px;
+  }
+}
+
+#container #section-quem-somos .div-texto-descritivo h3 {
+  margin-top: 20px;
+  color: #325466;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: left;
+}
+
+#container #section-quem-somos .div-texto-descritivo span {
+  color: #0fafba;
+}
+
+#container #section-quem-somos .div-texto-descritivo p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #346F7C;
+  text-align: justify;
+}
+
+#container #section-quem-somos .div-texto-descritivo ul {
+  margin-top: 20px;
+  padding: 10px 20px 20px;
+  background-color: #0fafba;
+}
+
+#container #section-quem-somos .div-texto-descritivo ul li {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FCFAF0;
+  text-align: left;
 }
 
 #container #section-nosso-trabalho {
