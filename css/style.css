@@ -1203,17 +1203,20 @@ body {
   }
 }
 
-#container #section-logo-carrossel .container-logo-carrossel #div-formulario button {
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario .button {
+  width: 80px;
   padding: 10px;
+  margin-top: 10px;
   border: none;
   font-weight: bold;
   font-size: 15px;
   line-height: 20px;
   color: #346F7C;
+  text-align: center;
   background-color: #FCFAF0;
 }
 
-#container #section-logo-carrossel .container-logo-carrossel #div-formulario button:hover {
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario .button:hover {
   cursor: pointer;
   color: #FCFAF0;
   background-color: #346F7C;

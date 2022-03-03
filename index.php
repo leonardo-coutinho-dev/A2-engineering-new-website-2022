@@ -1,3 +1,21 @@
+<?php
+
+if(!empty($_POST[enviarEmail]))
+
+{
+
+    $name = "Name: $_POST[name]\n";
+
+    $email = "E-mail: $_POST[email]\n";
+
+    $mensagem = "Message: $_POST[mensagem]\n";
+
+    mail("thiago@a2engineering.co.uk","Contato do site","$name $email $mensagem");
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -212,14 +230,15 @@
                 <div id="div-formulario">
                     <h3>CONTACT US</h3>
                     <p>A2 Engineering gives you a cost-effective way to make the most of your machinery. We have perfected a hydraulic cylinder repair procedure that allows us to serve customers across many industries, bringing continuous quality and innovation to every product we produce. We have built a reputation on many years of experience, and everything we do is geared towards serving our customers and powering the future.</p>
-                    <form id="form">
+                    <form id="form" action="" method="post">
+                        <input type="hidden" name="enviarEmail" value="OK">
                         <label for="name">Name:</label><br>
-                        <input placeholder="Name" type="text" id="name" name="name"><br>
+                        <input placeholder="Name" type="text" id="" name="name" required><br>
                         <label for="email">E-mail:</label><br>
-                        <input placeholder="E-mail" type="email" id="email" name="email">
-                        <textarea placeholder="Leave us a message" name="message" id="message" cols="30" rows="10"></textarea>
+                        <input placeholder="E-mail" type="email" id="" name="email" required>
+                        <textarea placeholder="Leave us a message" name="mensagem" id="" required></textarea>
+                        <input class="button" type="submit" value="send"></input>
                     </form>
-                    <button form_id="form" type="submit" form="form1" value="Submit">submit</button>
                 </div>
 
             </div>
