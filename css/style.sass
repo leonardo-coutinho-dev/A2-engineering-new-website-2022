@@ -513,24 +513,44 @@ body
         display: none
         width: 100%
         display: flex
+        align-items: center
         justify-content: center
-        @media (min-width: 930px)
-            display: block
         .container-logo-carrossel
             display: flex
             flex-direction: column
-            justify-content: space-between
+            align-items: center
+            width: 270px
+            @media (min-width: 600px)
+                width: 550px
             @media (min-width: 930px)
-                justify-content: space-around
-                margin: 20px 0
-            @media (min-width: 801px)
-                flex-direction: row
+                width: 880px
+            .div-processo-de-reparo
+                width: 100%
+                h2
+                    width: 290px
+                    background-color: #FCFAF0
+                    color: #325466
+                    font-size: 20px
+                    line-height: 25px
+                    margin: 20px 0 10px
+                    padding: 2px 0
+                    text-align: center
+                ul
+                    margin: 20px 0
+                    padding: 10px 20px 20px
+                    background-color: #FCFAF0
+                    li
+                        margin-top: 10px
+                        font-size: 16px
+                        line-height: 21px
+                        color: #325466
+                        text-align: left
             .img-slider
                 display: none
                 position: relative
                 width: 600px
                 height: 450px
-                margin: 10px
+                margin: 0 10px 20px
                 @media (min-width: 930px)
                     display: block
                     width: 700px
@@ -570,6 +590,36 @@ body
                         opacity: 1
                         background-color: #346F7C
                         box-shadow: 0 2px 5px #346F7C
+            #div-formulario
+                margin-top: 10px
+                width: 100%
+                h3
+                    color: #0fafba
+                    font-size: 28px
+                    line-height: 35px
+                    text-align: center
+                p
+                    margin-top: 20px
+                    font-size: 15px
+                    line-height: 20px
+                    color: #346F7C
+                    text-align: justify
+                form
+                    display: flex
+                    flex-direction: column
+                    margin: 20px 0
+                    label
+                        font-size: 15px
+                        line-height: 20px
+                        color: #346F7C
+                        text-align: justify
+                    input
+                        border: none
+                        padding: 10px
+                    textarea
+                        border: none
+                        margin-top: 20px
+                        padding: 10px
     #sections-termos-e-condicoes
         width: 100%
         padding: 20px 0
@@ -716,7 +766,10 @@ body
         display: flex
         align-items: center
         justify-content: center
+        a
+            text-decoration: none
         h2
-            font-size: 13px
+            font-size: 18px
+            line-height: 20px
             color: #F6F6ED
-            font-weight: bold
+            font-weight: normal

@@ -959,15 +959,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (min-width: 930px) {
-  #container #section-logo-carrossel {
-    display: block;
-  }
 }
 
 #container #section-logo-carrossel .container-logo-carrossel {
@@ -978,26 +975,51 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+}
+
+@media (min-width: 600px) {
+  #container #section-logo-carrossel .container-logo-carrossel {
+    width: 550px;
+  }
 }
 
 @media (min-width: 930px) {
   #container #section-logo-carrossel .container-logo-carrossel {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    margin: 20px 0;
+    width: 880px;
   }
 }
 
-@media (min-width: 801px) {
-  #container #section-logo-carrossel .container-logo-carrossel {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo {
+  width: 100%;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo h2 {
+  width: 290px;
+  background-color: #FCFAF0;
+  color: #325466;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 20px 0 10px;
+  padding: 2px 0;
+  text-align: center;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo ul {
+  margin: 20px 0;
+  padding: 10px 20px 20px;
+  background-color: #FCFAF0;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo ul li {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #325466;
+  text-align: left;
 }
 
 #container #section-logo-carrossel .container-logo-carrossel .img-slider {
@@ -1005,7 +1027,7 @@ body {
   position: relative;
   width: 600px;
   height: 450px;
-  margin: 10px;
+  margin: 0 10px 20px;
 }
 
 @media (min-width: 930px) {
@@ -1071,6 +1093,55 @@ body {
   background-color: #346F7C;
   -webkit-box-shadow: 0 2px 5px #346F7C;
           box-shadow: 0 2px 5px #346F7C;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario {
+  margin-top: 10px;
+  width: 100%;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario h3 {
+  color: #0fafba;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #346F7C;
+  text-align: justify;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario form label {
+  font-size: 15px;
+  line-height: 20px;
+  color: #346F7C;
+  text-align: justify;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario form input {
+  border: none;
+  padding: 10px;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario form textarea {
+  border: none;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 #container #sections-termos-e-condicoes {
@@ -1361,9 +1432,14 @@ body {
           justify-content: center;
 }
 
+#container #section-desenvolvedor a {
+  text-decoration: none;
+}
+
 #container #section-desenvolvedor h2 {
-  font-size: 13px;
+  font-size: 18px;
+  line-height: 20px;
   color: #F6F6ED;
-  font-weight: bold;
+  font-weight: normal;
 }
 /*# sourceMappingURL=style.css.map */
