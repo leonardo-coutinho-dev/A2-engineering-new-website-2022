@@ -252,7 +252,7 @@ body {
 }
 
 #container header nav ul li a {
-  width: 90%;
+  width: 100%;
   text-decoration: none;
   color: #2A2E30;
   opacity: 0;
@@ -302,7 +302,7 @@ body {
 }
 
 #container header nav .show li a {
-  width: 90%;
+  width: 100%;
   height: 100%;
   -webkit-transition: all .4s linear;
   transition: all .4s linear;
@@ -587,7 +587,7 @@ body {
 
 #container #section-quem-somos .div-texto-descritivo ul {
   margin-top: 20px;
-  padding: 10px 20px 20px;
+  padding: 15px;
   background-color: #0fafba;
 }
 
@@ -597,6 +597,30 @@ body {
   line-height: 21px;
   color: #FCFAF0;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#container #section-quem-somos .div-texto-descritivo ul li span {
+  margin-right: 4px;
+  font-size: 9px;
+  line-height: 21px;
+  color: #FCFAF0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #section-quem-somos .div-texto-descritivo ul li:nth-child(1) {
+  margin-top: 0;
 }
 
 #container #section-nosso-trabalho {
@@ -714,6 +738,7 @@ body {
 }
 
 #container #section-nosso-trabalho .container div:nth-child(2) {
+  padding: 15px;
   width: 270px;
   background-color: #efefe6;
   border-radius: 4px;
@@ -732,7 +757,7 @@ body {
 }
 
 #container #section-nosso-trabalho .container div:nth-child(2) h3 {
-  margin: 20px 20px 0;
+  margin-bottom: 20px;
   color: #325466;
   font-size: 28px;
   line-height: 35px;
@@ -740,11 +765,52 @@ body {
 }
 
 #container #section-nosso-trabalho .container div:nth-child(2) p {
-  margin: 20px;
+  margin-bottom: 10px;
   color: #346F7C;
   font-size: 15px;
   line-height: 20px;
   text-align: justify;
+}
+
+#container #section-nosso-trabalho .div-processo-de-reparo {
+  width: 270px;
+}
+
+@media (min-width: 600px) {
+  #container #section-nosso-trabalho .div-processo-de-reparo {
+    width: 550px;
+  }
+}
+
+@media (min-width: 930px) {
+  #container #section-nosso-trabalho .div-processo-de-reparo {
+    width: 880px;
+  }
+}
+
+#container #section-nosso-trabalho .div-processo-de-reparo h2 {
+  width: 270px;
+  background-color: #efefe6;
+  color: #325466;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 20px 0 10px;
+  padding: 2px 0;
+  text-align: center;
+}
+
+#container #section-nosso-trabalho .div-processo-de-reparo ul {
+  margin: 20px 0;
+  padding: 10px 20px 20px;
+  background-color: #efefe6;
+}
+
+#container #section-nosso-trabalho .div-processo-de-reparo ul li {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #325466;
+  text-align: left;
 }
 
 #container #section-nossos-servicos {
@@ -979,6 +1045,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 270px;
+  margin-top: 20px;
 }
 
 @media (min-width: 600px) {
@@ -993,53 +1060,21 @@ body {
   }
 }
 
-#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo {
-  width: 100%;
-}
-
-#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo h2 {
-  width: 290px;
-  background-color: #FCFAF0;
-  color: #325466;
-  font-size: 20px;
-  line-height: 25px;
-  margin: 20px 0 10px;
-  padding: 2px 0;
-  text-align: center;
-}
-
-#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo ul {
-  margin: 20px 0;
-  padding: 10px 20px 20px;
-  background-color: #FCFAF0;
-}
-
-#container #section-logo-carrossel .container-logo-carrossel .div-processo-de-reparo ul li {
-  margin-top: 10px;
-  font-size: 16px;
-  line-height: 21px;
-  color: #325466;
-  text-align: left;
-}
-
 #container #section-logo-carrossel .container-logo-carrossel .img-slider {
   display: none;
   position: relative;
-  width: 600px;
-  height: 450px;
-  margin: 0 10px 20px;
+  height: 570px;
 }
 
 @media (min-width: 930px) {
   #container #section-logo-carrossel .container-logo-carrossel .img-slider {
     display: block;
-    width: 700px;
+    width: 880px;
   }
 }
 
 #container #section-logo-carrossel .container-logo-carrossel .img-slider .slide {
-  width: 600px;
-  height: 450px;
+  height: 570px;
   z-index: 1;
   position: absolute;
   width: 100%;
@@ -1048,7 +1083,7 @@ body {
 }
 
 #container #section-logo-carrossel .container-logo-carrossel .img-slider .slide img {
-  height: 450px;
+  height: 570px;
   z-index: 1;
   width: 100%;
   border-radius: 5px;
@@ -1069,11 +1104,11 @@ body {
 #container #section-logo-carrossel .container-logo-carrossel .img-slider .navegacao-carrossel {
   z-index: 2;
   position: absolute;
+  left: 50%;
+  bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 10px;
-  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -1096,7 +1131,7 @@ body {
 }
 
 #container #section-logo-carrossel .container-logo-carrossel #div-formulario {
-  margin-top: 10px;
+  margin: 20px 0;
   width: 100%;
 }
 
@@ -1139,9 +1174,49 @@ body {
 }
 
 #container #section-logo-carrossel .container-logo-carrossel #div-formulario form textarea {
+  min-height: 200px;
   border: none;
   margin-top: 20px;
   padding: 10px;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario form input, #container #section-logo-carrossel .container-logo-carrossel #div-formulario form textarea {
+  scrol-y: auto;
+  width: 270px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #346F7C;
+  background-color: #FCFAF0;
+  text-align: justify;
+  font-family: 'Asap Condensed', sans-serif;
+}
+
+@media (min-width: 600px) {
+  #container #section-logo-carrossel .container-logo-carrossel #div-formulario form input, #container #section-logo-carrossel .container-logo-carrossel #div-formulario form textarea {
+    width: 550px;
+  }
+}
+
+@media (min-width: 930px) {
+  #container #section-logo-carrossel .container-logo-carrossel #div-formulario form input, #container #section-logo-carrossel .container-logo-carrossel #div-formulario form textarea {
+    width: 880px;
+  }
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario button {
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #346F7C;
+  background-color: #FCFAF0;
+}
+
+#container #section-logo-carrossel .container-logo-carrossel #div-formulario button:hover {
+  cursor: pointer;
+  color: #FCFAF0;
+  background-color: #346F7C;
 }
 
 #container #sections-termos-e-condicoes {
@@ -1173,15 +1248,13 @@ body {
   }
 }
 
-@media (min-width: 1240px) {
-  #container #sections-termos-e-condicoes .container {
-    width: 1440px;
-  }
+#container #sections-termos-e-condicoes a {
+  color: #325466;
+  text-decoration: none;
 }
 
-#container #sections-termos-e-condicoes a {
-  color: #2e2e30;
-  text-decoration: none;
+#container #sections-termos-e-condicoes a:hover {
+  color: #0fafba;
 }
 
 #container footer {
