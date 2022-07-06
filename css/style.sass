@@ -332,8 +332,6 @@ body
                         font-size: 9px
                         line-height: 21px
                         color: #FCFAF0
-                        display: flex
-                        align-items: center
                 li:nth-child(1)
                     margin-top: 0
     #section-nosso-trabalho
@@ -383,10 +381,13 @@ body
                     height: 195px
                     margin-bottom: 0
             .div-background
+                display: none
                 background-image: url("../img/container-1.jpg")
                 background-position: center
                 background-size: cover
                 background-repeat: no-repeat
+                @media(min-width: 930px)
+                    display: block
             div:nth-child(2)
                 padding: 15px
                 width: 270px
